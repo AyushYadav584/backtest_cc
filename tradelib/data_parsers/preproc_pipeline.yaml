@@ -1,0 +1,34 @@
+---
+filtering_criteria:
+  columns:
+    - Type
+    - Strike
+    - BidPrice
+    - BidQty
+    - AskQty
+
+  conditions:
+    - Type:
+        operator: "!="
+        operand_type: "val"
+        value: "XX"
+
+    - Strike:
+        operator: "!="
+        operand_type: "val"
+        value: -0.01
+
+    - BidPrice:
+        operator: "<"
+        operand_type: "col"
+        value: "AskPrice"
+
+    - BidQty:
+        operator: "!="
+        operand_type: "val"
+        value: 0.0
+
+    - AskQty:
+        operator: "!="
+        operand_type: "val"
+        value: 0.0
