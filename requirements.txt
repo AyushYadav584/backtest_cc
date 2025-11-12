@@ -1,0 +1,18 @@
+pandas==1.5.0
+Jinja2
+numpy==1.26.3
+financiallib
+py_vollib_vectorized
+pandas-market-calendars
+six
+urllib3
+idna
+pyyaml
+pyarrow
+aspose-words
+pdfrw
+fpdf
+kaleido
+scikit-learn
+
+-e .
